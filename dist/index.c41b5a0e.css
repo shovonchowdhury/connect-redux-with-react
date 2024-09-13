@@ -122,4 +122,68 @@ form button {
   margin: 0;
   font-size: 24px;
 }
+
+.cart-container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.cart-container h2 {
+  text-align: center;
+  margin: 32px 0;
+}
+
+.cart-header {
+  padding: 24px;
+  font-weight: 700;
+}
+
+.cart-item-container:not(:last-child) {
+  border-bottom: 1px solid #898989;
+}
+
+.cart-item-container {
+  grid-template-columns: 4fr 1fr 1fr 1fr;
+  gap: 16px;
+  padding: 12px 24px;
+  display: grid;
+}
+
+.cart-item-container > div:not(.cart-item) {
+  justify-content: center;
+}
+
+.cart-item-container > div:last-child {
+  justify-content: flex-end;
+}
+
+.cart-item-container img {
+  width: 60px;
+}
+
+.cart-item-container > div {
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-items-count {
+  color: #fff;
+  background-color: #000;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  font-size: 12px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-40%, -90%);
+}
 /*# sourceMappingURL=index.c41b5a0e.css.map */
