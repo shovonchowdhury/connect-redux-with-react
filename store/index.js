@@ -11,7 +11,7 @@ const reducer= combineReducers({
     wishList: wishListReducer
 })
 
-const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__?.());
+export const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__?.());
 
 store.dispatch({type: CART_ADD_ITEM, payload:{productId:1, quantity:1}});
 store.dispatch({ type: CART_ADD_ITEM, payload: { productId: 12, quantity: 1 } });
